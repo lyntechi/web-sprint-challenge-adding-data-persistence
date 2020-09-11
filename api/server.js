@@ -7,9 +7,9 @@ const resourceRouter = require("../resource/resource-router");
 const taskRouter = require("../task/task-router");
 server.use(express.json());
 
-server.use("api/project", projectRouter);
-server.use("api/project/resource", resourceRouter);
-server.use("api/project/task", taskRouter);
+server.use("/api/project", projectRouter);
+server.use("/api/resource", resourceRouter);
+server.use("/api/task", taskRouter);
 server.use("/", welcomeRouter);
 
 module.exports = server;

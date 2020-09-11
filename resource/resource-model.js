@@ -1,9 +1,14 @@
-const express = require("express");
 const db = require("../data/db-config");
-const router = express.Router();
 
-router.get("/", (req, res) => {});
+module.exports = {
+  getAll,
+  add,
+};
 
-router.post("/", (req, res) => {});
+function getAll() {
+  return db("resource");
+}
 
-module.exports = router;
+function add(resource) {
+  return db("resource").insert(resource, "id");
+}
