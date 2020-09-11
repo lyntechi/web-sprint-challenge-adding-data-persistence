@@ -4,7 +4,7 @@
   "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
   "main": "index.js",
   "scripts": {
-    "server": "index.js nodemon"
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
